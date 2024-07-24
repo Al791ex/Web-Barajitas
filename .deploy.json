@@ -1,8 +1,7 @@
 {
-    "DEPLOYPATH" : "/home/gp3/git/Web-Barajitas",
-    "task" : [
-      "login.php",
-      "images"
-    ]
+  "DEPLOYPATH" : "/home/gp3/git/Web-Barajitas",  
+  "task" :  {
+    "0" : "login.php",   
+    "1" : "images"     
   }
-  
+}
