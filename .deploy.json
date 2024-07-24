@@ -1,7 +1,6 @@
 {
   "DEPLOYPATH" : "/home/gp3/git/Web-Barajitas",  
   "task" :  {
-    "0" : "login.php",
     "1" : "login_user.php",
     "2" : "register.php",
     "3" : "register_user.php", 
