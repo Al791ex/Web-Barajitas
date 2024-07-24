@@ -198,108 +198,130 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica de Sumas y Restas</title>
     <link rel="stylesheet" href="css/suma.css">
+    <!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/3d75464da1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        
-<!-- Sección de sumas -->
-<div class="exercise-container">
-    <div class="exercise">
-        <?php if ($sum1_completed == 1): ?>
-            <h2>Ejercicio de Sumas - Fácil</h2>
-            <div class="message">
-                <p>¡Ya has completado este ejercicio con éxito!</p>
+    <script>
+        function logout(){
+            var res = confirm("Estás seguro que quieres salir?")
+            return res
+        }
+    </script>
+    <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="suma.php">
+            <img src="images\logo.png" width="50" height="80" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="ml-auto">
+            <a onclick="return logout()" href="logout.php" class="btn btn-small btn-danger"><i class="fa-solid fa-right-from-bracket"></i></a>
             </div>
-        <?php else: ?>
-            <h2>Ejercicio de Sumas - Fácil</h2>
             
-            <form method="post" action="">
-                <div class="problem">
-                    <p>¿Cuánto es <?php echo $sum1_operand1; ?> + <?php echo $sum1_operand2; ?>?</p>
-                    <input type="hidden" name="sum1_operand1" value="<?php echo $sum1_operand1; ?>">
-                    <input type="hidden" name="sum1_operand2" value="<?php echo $sum1_operand2; ?>">
-                    <input type="number" name="sum1_answer" required>
-                </div>
-                <button type="submit" name="submit_sum1">Verificar Suma 1</button>
-                <div class="message">
-                    <p><?php echo $sum1_message; ?></p>
-                </div>
-            </form>
-        <?php endif; ?>
-    </div>
-            <div class="exercise">
-            
-        <?php if ($sum2_completed == 1): ?>
-            <h2>Ejercicio de Sumas - Dificil</h2>
-            <div class="message">
-                <p>¡Ya has completado este ejercicio con éxito!</p>
-            </div>
-
-        <?php elseif ($sum1_completed == 0): ?> 
-            <h2>Ejercicio de Sumas - Dificil</h2>
-            <div class="message">
-                <p>Completa el ejercicio Fácil para poder realizar este</p>
-            </div>  
-
-        <?php else: ?>
-                <h2>Ejercicio de Sumas - Difícil</h2>
-                
-                <form method="post" action="">
-                    <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum2_operand1; ?> + <?php echo $sum2_operand2; ?>?</p>
-                        <input type="hidden" name="sum2_operand1" value="<?php echo $sum2_operand1; ?>">
-                        <input type="hidden" name="sum2_operand2" value="<?php echo $sum2_operand2; ?>">
-                        <input type="number" name="sum2_answer" required>
-                    </div>
-                    <button type="submit" name="submit_sum2">Verificar Suma 2</button>
-                    <div class="message">
-                        <p><?php echo $sum2_message; ?></p>
-                    </div>
-                </form>
-        <?php endif; ?>
-            </div>
         </div>
+    </nav>
 
-        <!-- Sección de restas -->
-        <div class="exercise-container">
-            <div class="exercise">
-            <?php if ($sub1_completed == 1): ?>
-            <h2>Ejercicio de Restas - Fácil</h2>
-            <div class="message">
-                <p>¡Ya has completado este ejercicio con éxito!</p>
-            </div>
-        <?php else: ?>
-                <h2>Ejercicio de Restas - Fácil</h2>
+<div class="container">
+    <!-- Sección de sumas -->
+    <div class="exercise-container">
+        <div class="exercise">
+            <?php if ($sum1_completed == 1): ?>
+                <h2>Ejercicio de Sumas - Fácil</h2>
+                <div class="message">
+                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                </div>
+            <?php else: ?>
+                <h2>Ejercicio de Sumas - Fácil</h2>
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sub1_operand1; ?> - <?php echo $sub1_operand2; ?>?</p>
-                        <input type="hidden" name="sub1_operand1" value="<?php echo $sub1_operand1; ?>">
-                        <input type="hidden" name="sub1_operand2" value="<?php echo $sub1_operand2; ?>">
-                        <input type="number" name="sub1_answer" required>
+                        <p>¿Cuánto es <?php echo $sum1_operand1; ?> + <?php echo $sum1_operand2; ?>?</p>
+                        <input type="hidden" name="sum1_operand1" value="<?php echo $sum1_operand1; ?>">
+                        <input type="hidden" name="sum1_operand2" value="<?php echo $sum1_operand2; ?>">
+                        <input type="number" name="sum1_answer" required>
                     </div>
-                    <button type="submit" name="submit_sub1">Verificar Resta 1</button>
+                    <button type="submit" name="submit_sum1">Verificar Suma 1</button>
                     <div class="message">
-                        <p><?php echo $sub1_message; ?></p>
+                        <p><?php echo $sum1_message; ?></p>
                     </div>
                 </form>
-                <?php endif; ?>
+            <?php endif; ?>
+        </div>
+                <div class="exercise">
+                
+            <?php if ($sum2_completed == 1): ?>
+                <h2>Ejercicio de Sumas - Dificil</h2>
+                <div class="message">
+                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                </div>
+
+            <?php elseif ($sum1_completed == 0): ?> 
+                <h2>Ejercicio de Sumas - Dificil</h2>
+                <div class="message">
+                    <p>Completa el ejercicio Fácil para poder realizar este</p>
+                </div>  
+
+            <?php else: ?>
+                    <h2>Ejercicio de Sumas - Difícil</h2>
+                    
+                    <form method="post" action="">
+                        <div class="problem">
+                            <p>¿Cuánto es <?php echo $sum2_operand1; ?> + <?php echo $sum2_operand2; ?>?</p>
+                            <input type="hidden" name="sum2_operand1" value="<?php echo $sum2_operand1; ?>">
+                            <input type="hidden" name="sum2_operand2" value="<?php echo $sum2_operand2; ?>">
+                            <input type="number" name="sum2_answer" required>
+                        </div>
+                        <button type="submit" name="submit_sum2">Verificar Suma 2</button>
+                        <div class="message">
+                            <p><?php echo $sum2_message; ?></p>
+                        </div>
+                    </form>
+            <?php endif; ?>
+                </div>
             </div>
 
-            <div class="exercise">
-            <?php if ($sub2_completed == 1): ?>
-            <h2>Ejercicio de Restas - Dificil</h2>
-            <div class="message">
-                <p>¡Ya has completado este ejercicio con éxito!</p>
-            </div>
-            <?php elseif ($sub1_completed == 0): ?> 
-            <h2>Ejercicio de Restas - Dificil</h2>
-            <div class="message">
-                <p>Completa el ejercicio Fácil para poder realizar este</p>
+            <!-- Sección de restas -->
+            <div class="exercise-container">
+                <div class="exercise">
+                <?php if ($sub1_completed == 1): ?>
+                <h2>Ejercicio de Restas - Fácil</h2>
+                <div class="message">
+                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                </div>
+            <?php else: ?>
+                    <h2>Ejercicio de Restas - Fácil</h2>
+                    
+                    <form method="post" action="">
+                        <div class="problem">
+                            <p>¿Cuánto es <?php echo $sub1_operand1; ?> - <?php echo $sub1_operand2; ?>?</p>
+                            <input type="hidden" name="sub1_operand1" value="<?php echo $sub1_operand1; ?>">
+                            <input type="hidden" name="sub1_operand2" value="<?php echo $sub1_operand2; ?>">
+                            <input type="number" name="sub1_answer" required>
+                        </div>
+                        <button type="submit" name="submit_sub1">Verificar Resta 1</button>
+                        <div class="message">
+                            <p><?php echo $sub1_message; ?></p>
+                        </div>
+                    </form>
+                    <?php endif; ?>
+                </div>
+
+                <div class="exercise">
+                <?php if ($sub2_completed == 1): ?>
+                <h2>Ejercicio de Restas - Dificil</h2>
+                <div class="message">
+                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                </div>
+                <?php elseif ($sub1_completed == 0): ?> 
+                <h2>Ejercicio de Restas - Dificil</h2>
+                <div class="message">
+                    <p>Completa el ejercicio Fácil para poder realizar este</p>
             </div>  
-        <?php else: ?>
+            <?php else: ?>
                 <h2>Ejercicio de Restas - Difícil</h2>
-               
+            
                 <form method="post" action="">
                     <div class="problem">
                         <p>¿Cuánto es <?php echo $sub2_operand1; ?> - <?php echo $sub2_operand2; ?>?</p>
