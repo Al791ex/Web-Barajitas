@@ -1,10 +1,8 @@
 {
     "DEPLOYPATH" : "/home/gp3/git/Web-Barajitas",
     "task" : [
-      "mkdir -p /tmp/deploy",
-      "cp index.php /tmp/deploy/index.php",
-      "cp -r images /tmp/deploy/",
-      "cp -r /tmp/deploy/* /home/gp3/git/Web-Barajitas/",
-      "rm -rf /tmp/deploy"
+      "index.php",
+      "images"
     ]
   }
+  
