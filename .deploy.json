@@ -1,5 +1,5 @@
 {
-    "DEPLOYPATH" : "gp3/git/Web-Barajitas",
+    "DEPLOYPATH" : "home/gp3/Web-Barajitas",
     "task" :  [
       "index.php",
       "images"
