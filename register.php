@@ -18,7 +18,7 @@
         <form action="" method="POST">
            <h1>Registrate Aquí</h1>
            <?php
-            include("create_user.php");
+            include("register_user.php");
 
             if (isset($_GET['register'])){
                 echo "<div class='alert alert-success'>Empleado registrado con éxito</div>";
