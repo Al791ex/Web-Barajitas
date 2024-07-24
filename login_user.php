@@ -19,13 +19,13 @@ if (isset($_POST['login'])) {
                 $_SESSION['usuario'] = $usuario;
                 header('location:si.html');
             } else {
-                header('location:login.php?error');
+                header('location:index.php?error');
             }
         } else {
-            header('location:login.php?not_found');
+            header('location:index.php?not_found');
         }
     } else {
-        header('location:login.php?empty');
+        header('location:index.php?empty');
     }
 }
 ?>

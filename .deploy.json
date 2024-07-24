@@ -1,0 +1,7 @@
+{
+    "DEPLOYPATH" : "https://github.com/Al791ex/Web-Barajitas",
+    "task" :  [
+      "index.php",
+      "images"
+    ]
+  }
