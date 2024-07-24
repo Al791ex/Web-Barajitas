@@ -19,7 +19,7 @@
            <h1>Iniciar Sesión</h1>
 
            <?php
-            include("login_user.php");
+            include("controller/login_user.php");
 
             if (isset($_GET['error'])) {
                 echo '<div class="alert alert-danger">Error: Contraseña incorrecta.</div>';

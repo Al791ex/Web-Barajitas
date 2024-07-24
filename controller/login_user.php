@@ -17,15 +17,19 @@ if (isset($_POST['login'])) {
             if (password_verify($contrasena, $row['contrasena'])) {
                 session_start();
                 $_SESSION['usuario'] = $usuario;
-                header('location:si.html');
+                header('location:suma.php');
+                exit();
             } else {
-                header('location:login.php?error');
+                header('location:index.php?error');
+                exit();
             }
         } else {
-            header('location:login.php?not_found');
+            header('location:index.php?not_found');
+            exit();
         }
     } else {
-        header('location:login.php?empty');
+        header('location:index.php?empty');
+        exit();
     }
 }
 ?>
