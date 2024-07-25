@@ -18,9 +18,8 @@ if (isset($_POST['register'])) {
         $query = "INSERT INTO usuario (nombre, contrasena) VALUES ('$usuario', '$hashed_password')";
 
         try {
-            if (mysqli_query($con, $query)) {
-               echo '<div class="alert alert-success"> Usuario registrado con éxito</div>;
-                // Redirección
+            if (mysqli_query($con, $query)) {     
+// Redirección
                 header('Location:index.php');
                 exit();
             } else {
