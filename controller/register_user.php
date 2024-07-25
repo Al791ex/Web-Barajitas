@@ -20,7 +20,7 @@ if (isset($_POST['register'])) {
         try {
             if (mysqli_query($con, $query)) {     
 // Redirección
-                header('Location:index.php');
+                header('Location:https://sumas-restas.azurewebsites.net');
                 exit();
             } else {
                 echo '<div class="alert alert-danger">Error al registrar el empleado: ' . mysqli_error($con) . '</div>';
