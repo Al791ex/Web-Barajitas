@@ -21,7 +21,7 @@
             include("controller/register_user.php");
 
             if (isset($_GET['register'])){
-                echo "<div class='alert alert-success'>Empleado registrado con éxito</div>";
+                echo "<div class='alert alert-success'>Usuario registrado con éxito</div>";
             } elseif (isset($_GET['error'])) {
                 echo '<div class="alert alert-danger">Error: Usuario ya registrado.</div>';
             }

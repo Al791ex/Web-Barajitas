@@ -20,13 +20,12 @@ if (isset($_POST['register'])) {
         try {
             if (mysqli_query($con, $query)) {
                 header('location:index.php'); 
-                
             } else {
                 echo '<div class="alert alert-danger">Error al registrar el empleado: ' . mysqli_error($con) . '</div>';
             }
         } catch (mysqli_sql_exception $e) {
             if ($e->getCode() == 1062) { // Código de error para clave duplicada
-                header('location:register.php?error');
+                echo '<div class="alert alert-danger">Error: Usuario ya registrado.</div>';
             } else {
                 echo '<div class="alert alert-danger">Error al registrar el empleado: ' . $e->getMessage() . '</div>';
             }

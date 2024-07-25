@@ -35,18 +35,14 @@ if (isset($_POST['login'])) {
                 
                 // Redirección
                 header('Location: suma.php');
-                exit();
             } else {
-                header('Location: ?error');
-                exit();
+                echo '<div class="alert alert-danger">Error: Contraseña incorrecta.</div>';
             }
         } else {
-            header('Location: ?not_found');
-            exit();
+            echo '<div class="alert alert-danger">Error: Usuario no encontrado.</div>';
         }
     } else {
-        header('Location: ?empty');
-        exit();
+        echo '<div class="alert alert-warning">Alguno de los campos está vacío</div>';
     }
 }
 
