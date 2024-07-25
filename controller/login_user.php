@@ -2,6 +2,9 @@
 // Inicia el búfer de salida
 ob_start();
 
+// Inicia la sesión antes de cualquier salida
+session_start();
+
 include("conexion.php");
 
 // Configuración de reporte de errores para depuración
@@ -27,23 +30,26 @@ if (isset($_POST['login'])) {
             $row = mysqli_fetch_assoc($result);
             
             if (password_verify($contrasena, $row['contrasena'])) {
-                session_start();
                 $_SESSION['usuario'] = $usuario;
 
                 // Para poder usar el id en suma.php
                 $_SESSION['user_id'] = $row['id'];
                 
                 // Redirección
-                header('Location: suma.php');
+                header('Location:suma.php');
                 exit();
+                
             } else {
-                echo '<div class="alert alert-danger">Error: Contraseña incorrecta.</div>';
+                header('Location: index.php?error=1');
+                exit();
             }
         } else {
-            echo '<div class="alert alert-danger">Error: Usuario no encontrado.</div>';
+            header('Location: index.php?not_found=1');
+            exit();
         }
     } else {
-        echo '<div class="alert alert-warning">Alguno de los campos está vacío</div>';
+        header('Location: index.php?empty=1');
+        exit();
     }
 }
 

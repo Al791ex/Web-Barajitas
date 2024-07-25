@@ -1,3 +1,8 @@
+<?php
+// Incluye el archivo de inicio de sesión
+include("controller/login_user.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +24,6 @@
            <h1>Iniciar Sesión</h1>
 
            <?php
-            include("controller/login_user.php");
-
             if (isset($_GET['error'])) {
                 echo '<div class="alert alert-danger">Error: Contraseña incorrecta.</div>';
             } elseif (isset($_GET['empty'])) {
