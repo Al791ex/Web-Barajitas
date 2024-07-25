@@ -1,6 +1,10 @@
 <?php
 include("conexion.php");
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 if (isset($_POST['login'])) {
     if (!empty($_POST['usuario']) && !empty($_POST['contrasena'])) {
         $usuario = $_POST['usuario'];
