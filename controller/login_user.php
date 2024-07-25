@@ -35,6 +35,7 @@ if (isset($_POST['login'])) {
                 
                 // Redirección
                 header('Location: suma.php');
+                exit();
             } else {
                 echo '<div class="alert alert-danger">Error: Contraseña incorrecta.</div>';
             }
