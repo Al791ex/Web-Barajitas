@@ -7,17 +7,28 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 
-$currentUser = $_SESSION['usuario'];
+$currentUser = $_SESSION['user_id'];
+
+
 
 try {
-    $query = "select * from operaciones where id = '$currentUser'";
+    $query = "select * from operaciones where usuario = '$currentUser'";
     $result = mysqli_query($con, $query);
 } catch (\Throwable $th) {
     echo '<div class="alert alert-danger">Debes estar logeado para hacer esta operacion: ' . $e->getMessage() . '</div>';
 }
 
-if(!$result){       
-    die("Fallo el query");
+$rowNumber = mysqli_num_rows($result);
+
+
+//esto lo que hace es que revisa si ya existe el usuario en la tabla operaciones y si no existe lo crea
+if ($rowNumber < 1){       
+    $query2 = "insert into operaciones (usuario) values ('$currentUser')";
+
+    $result2 = mysqli_query($con, $query2);
+
+    $query = "select * from operaciones where usuario = '$currentUser'";
+    $result = mysqli_query($con, $query);
     
 }
 
@@ -26,7 +37,7 @@ $row = mysqli_fetch_assoc($result);
 
 $sum1_completed = $row['suma1'];
 $sum2_completed = $row['suma2'];
-$sub1_completed = $ro0w['resta1'];
+$sub1_completed = $row['resta1'];
 $sub2_completed = $row['resta2'];
 
 // Inicializamos las variables para las sumas de dificultad baja

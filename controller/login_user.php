@@ -17,6 +17,10 @@ if (isset($_POST['login'])) {
             if (password_verify($contrasena, $row['contrasena'])) {
                 session_start();
                 $_SESSION['usuario'] = $usuario;
+
+                //para poder usar el id en suma.php
+                $_SESSION['user_id'] = $row['id'];
+                
                 header('location:suma.php');
                 exit();
             } else {
