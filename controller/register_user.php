@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+ob_start();
 
 // Configuración de reporte de errores para depuración
 ini_set('display_errors', 1);
@@ -41,4 +42,5 @@ if (isset($_POST['register'])) {
         echo '<div class="alert alert-warning">Alguno de los campos está vacío</div>';
     }
 }
+ob_end_flush();
 ?>
