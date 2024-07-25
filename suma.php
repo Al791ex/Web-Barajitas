@@ -15,7 +15,7 @@ try {
     $query = "select * from operaciones where usuario = '$currentUser'";
     $result = mysqli_query($con, $query);
 } catch (\Throwable $th) {
-    echo '<div class="alert alert-danger">Debes estar logeado para hacer esta operacion: ' . $e->getMessage() . '</div>';
+    echo '<div class="alert alert-danger">Debes iniciar sesión para hacer esta operacion: ' . $e->getMessage() . '</div>';
 }
 
 $rowNumber = mysqli_num_rows($result);
