@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - Barajas
+name: Build and deploy PHP app to Azure Web App - sumas-restas
 
 on:
   push:
@@ -61,15 +61,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_190E33A6C4BB41CC928166C1F5DB4CC8 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0244469AB80D419F8C223B50FE8827D1 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7C8B485704474B8DBCF2C0131A2306F9 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C05ED7113C424DD6962EF80ABF4BBD06 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_FF70114586E14918941D74A248859A6A }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D7006A9795204577BFE59C9319A5F763 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Barajas'
+          app-name: 'sumas-restas'
           slot-name: 'Production'
           package: .
           
