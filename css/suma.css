@@ -78,3 +78,19 @@ button:hover {
     font-size: 18px;
     color: #ff3333;
 }
+
+.container-flechas {
+    width: 100%;
+}
+
+.container-flechas .left {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.container-flechas .right {
+    float: right;
+    width: 50%;
+    text-align: center;
+}

@@ -214,10 +214,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="suma.php">
-            <img src="images\logo.png" width="50" height="80" class="d-inline-block align-top" alt="">
+                <img src="images\logo.png" width="50" height="80" class="d-inline-block align-top" alt="">
             </a>
             <div class="ml-auto">
-            <a onclick="return logout()" href="logout.php" class="btn btn-small btn-danger"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a onclick="return logout()" href="logout.php" class="btn btn-small btn-danger"><i class="fa-solid fa-right-from-bracket"></i></a>
             </div>
             
         </div>
@@ -335,6 +335,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </form>
                 <?php endif; ?>
+            </div>
+        </div>
+    </div>
+    <div class="container-sm container-flechas">
+        <div class="row">
+            <div class="col-auto left">
+                <a href="#" class="btn btn-success"><i class="fa-solid fa-arrow-left-long"></i></a>
+            </div>
+            <div class="col-auto ml-auto right">
+                <a href="#" class="btn btn-success"><i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
         </div>
     </div>
