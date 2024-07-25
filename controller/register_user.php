@@ -1,6 +1,11 @@
 <?php
 include("conexion.php");
 
+// Configuración de reporte de errores para depuración
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 if (isset($_POST['register'])) {
     if (!empty($_POST['usuario']) && !empty($_POST['contrasena']) && !empty($_POST['confirmar_contra'])) {
         $usuario = $_POST['usuario'];
@@ -20,7 +25,7 @@ if (isset($_POST['register'])) {
         try {
             if (mysqli_query($con, $query)) {     
 // Redirección
-                header('Location:https://sumas-restas.azurewebsites.net');
+                header('Location:https: index.php');
                 exit();
             } else {
                 echo '<div class="alert alert-danger">Error al registrar el empleado: ' . mysqli_error($con) . '</div>';
