@@ -20,7 +20,9 @@ if (isset($_POST['register'])) {
         try {
             if (mysqli_query($con, $query)) {
                echo '<div class="alert alert-success"> Usuario registrado con éxito</div>;
-header("location:index.php"); 
+                // Redirección
+                header('Location:index.php');
+                exit();
             } else {
                 echo '<div class="alert alert-danger">Error al registrar el empleado: ' . mysqli_error($con) . '</div>';
             }
