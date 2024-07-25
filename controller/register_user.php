@@ -19,7 +19,7 @@ if (isset($_POST['register'])) {
 
         try {
             if (mysqli_query($con, $query)) {
-                header('location:index.php'); 
+                header("location:index.php"); 
             } else {
                 echo '<div class="alert alert-danger">Error al registrar el empleado: ' . mysqli_error($con) . '</div>';
             }
