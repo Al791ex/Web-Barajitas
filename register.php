@@ -22,6 +22,7 @@
 
             if (isset($_GET['register'])){
                 echo "<div class='alert alert-success'>Usuario registrado con éxito</div>";
+                header("Location: index.php");
             } elseif (isset($_GET['error'])) {
                 echo '<div class="alert alert-danger">Error: Usuario ya registrado.</div>';
             }
