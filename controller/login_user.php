@@ -1,6 +1,10 @@
 <?php
+// Inicia el búfer de salida
+ob_start();
+
 include("conexion.php");
 
+// Configuración de reporte de errores para depuración
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -15,6 +19,10 @@ if (isset($_POST['login'])) {
         
         $result = mysqli_query($con, $query);
         
+        if (!$result) {
+            die('Error en la consulta: ' . mysqli_error($con));
+        }
+
         if (mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_assoc($result);
             
@@ -22,22 +30,26 @@ if (isset($_POST['login'])) {
                 session_start();
                 $_SESSION['usuario'] = $usuario;
 
-                //para poder usar el id en suma.php
+                // Para poder usar el id en suma.php
                 $_SESSION['user_id'] = $row['id'];
                 
-                header('location:suma.php');
+                // Redirección
+                header('Location: suma.php');
                 exit();
             } else {
-                header('location:index.php?error');
+                header('Location: index.php?error');
                 exit();
             }
         } else {
-            header('location:index.php?not_found');
+            header('Location: index.php?not_found');
             exit();
         }
     } else {
-        header('location:index.php?empty');
+        header('Location: index.php?empty');
         exit();
     }
 }
+
+// Limpia y envía el búfer de salida
+ob_end_flush();
 ?>
