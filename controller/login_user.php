@@ -37,15 +37,15 @@ if (isset($_POST['login'])) {
                 header('Location: suma.php');
                 exit();
             } else {
-                header('Location: index.php?error');
+                header('Location: ?error');
                 exit();
             }
         } else {
-            header('Location: index.php?not_found');
+            header('Location: ?not_found');
             exit();
         }
     } else {
-        header('Location: index.php?empty');
+        header('Location: ?empty');
         exit();
     }
 }
