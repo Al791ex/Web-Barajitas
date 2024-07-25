@@ -26,7 +26,7 @@ if (isset($_POST['register'])) {
             if (mysqli_query($con, $query)) {     
 // Redirección
                 header('Location:https: index.php');
-                exit();
+                exit;
             } else {
                 echo '<div class="alert alert-danger">Error al registrar el empleado: ' . mysqli_error($con) . '</div>';
             }
