@@ -24,7 +24,8 @@ if (isset($_POST['register'])) {
 
         try {
             if (mysqli_query($con, $query)) {
-                header('location:index.php');   
+                header('location:index.php');
+                exit(); 
             }
         } catch (mysqli_sql_exception $e) {
             if ($e->getCode() == 1062) { // Código de error para clave duplicada
