@@ -43,7 +43,7 @@ if (isset($_POST['register'])) {
     }
 
     if ($register_success) {
-        header('Location: register.php?register=success');
+        header('Location: index.php');
         exit();
     } elseif ($error_message) {
         header('Location: register.php?error=' . urlencode($error_message));
@@ -73,9 +73,7 @@ if (isset($_POST['register'])) {
         <form action="" method="POST">
            <h1>Registrate Aquí</h1>
            <?php
-            if (isset($_GET['register']) && $_GET['register'] == 'success'){
-                header('Location: index.php');
-            } elseif (isset($_GET['error'])) {
+            if (isset($_GET['error'])) {
                 echo '<div class="alert alert-danger">Error: ' . htmlspecialchars($_GET['error']) . '</div>';
             }
            ?>
