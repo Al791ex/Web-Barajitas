@@ -1,6 +1,5 @@
 <?php
 include("conexion.php");
-ob_start();
 
 // Configuración de reporte de errores para depuración
 ini_set('display_errors', 1);
@@ -24,21 +23,18 @@ if (isset($_POST['register'])) {
         $query = "INSERT INTO usuario (nombre, contrasena) VALUES ('$usuario', '$hashed_password')";
 
         try {
-            if (mysqli_query($con, $query)) {     
-echo '<div class="alert alert-success">Usuario registrado con éxito</div>';
-            } else {
-                echo '<div class="alert alert-danger">Error al registrar el usuario: ' . mysqli_error($con) . '</div>';
+            if (mysqli_query($con, $query)) {
+                header('location:index.php');   
             }
         } catch (mysqli_sql_exception $e) {
             if ($e->getCode() == 1062) { // Código de error para clave duplicada
                 echo '<div class="alert alert-danger">Error: Usuario ya registrado.</div>';
             } else {
-                echo '<div class="alert alert-danger">Error al registrar el empleado: ' . $e->getMessage() . '</div>';
+                echo '<div class="alert alert-danger">Error al registrar el usuario: ' . $e->getMessage() . '</div>';
             }
         }
     } else {
         echo '<div class="alert alert-warning">Alguno de los campos está vacío</div>';
     }
 }
-ob_end_flush();
 ?>
