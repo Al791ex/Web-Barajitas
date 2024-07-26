@@ -14,6 +14,7 @@ if (isset($_POST['register'])) {
         
         if ($contrasena != $confirmar_contra) {
             echo '<div class="alert alert-warning">Las contraseñas no coinciden</div>';
+            exit(); // Salida temprana para evitar continuar la ejecución
         }
 
         // Hash de la contraseña
@@ -26,6 +27,8 @@ if (isset($_POST['register'])) {
             if (mysqli_query($con, $query)) {
                 header('location:index.php');
                 exit(); 
+            } else {
+                echo '<div class="alert alert-danger">Error al registrar el usuario</div>';
             }
         } catch (mysqli_sql_exception $e) {
             if ($e->getCode() == 1062) { // Código de error para clave duplicada
