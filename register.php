@@ -74,7 +74,7 @@ if (isset($_POST['register'])) {
            <h1>Registrate Aquí</h1>
            <?php
             if (isset($_GET['register']) && $_GET['register'] == 'success'){
-                echo "<div class='alert alert-success'>Usuario registrado con éxito</div>";
+                header('Location: index.php');
             } elseif (isset($_GET['error'])) {
                 echo '<div class="alert alert-danger">Error: ' . htmlspecialchars($_GET['error']) . '</div>';
             }
