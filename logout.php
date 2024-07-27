@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    session_destroy();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +19,6 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <?php
-        session_start();
-        session_destroy();
-    ?>
     <div class="wrapper">
         <form action="" method="POST">
            <h1>Has cerrado la sesión</h1>
