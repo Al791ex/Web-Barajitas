@@ -43,7 +43,7 @@ if (isset($_POST['register'])) {
     }
 
     if ($register_success) {
-        header('Location: index.php');
+        header('Location: index.php?success');
         exit();
     } elseif ($error_message) {
         header('Location: register.php?error=' . urlencode($error_message));

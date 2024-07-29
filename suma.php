@@ -749,10 +749,10 @@ if (isset($_POST['sub8_answer'])) {
             <a class="navbar-brand" href="suma.php">
                 <img src="images\logo.png" width="50" height="80" class="d-inline-block align-top" alt="">
             </a>
+            <h4 class="h4-titulo">Sumas y Restas</h4>
             <div class="ml-auto">
                 <a onclick="return logout()" href="logout.php" class="btn btn-small btn-danger"><i class="fa-solid fa-right-from-bracket"></i></a>
             </div>
-            
         </div>
     </nav>
 
@@ -785,7 +785,7 @@ else{
             <?php if ($sum1_completed == 1): ?>
                 <h2>Ejercicio de Sumas - Fácil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                 <h2>Ejercicio de Sumas - Fácil</h2>
@@ -797,7 +797,7 @@ else{
                         <input type="hidden" name="sum1_operand2" value="<?php echo $sum1_operand2; ?>">
                         <input type="number" name="sum1_answer" required>
                     </div>
-                    <button type="submit" name="submit_sum1">Verificar Suma 1</button>
+                    <button class="btn-verificar" type="submit" name="submit_sum1">Verificar Suma 1</button>
                     <div class="message">
                         <p><?php echo $sum1_message; ?></p>
                     </div>
@@ -809,7 +809,7 @@ else{
             <?php if ($sum2_completed == 1): ?>
                 <h2>Ejercicio de Sumas - Fácil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                 <h2>Ejercicio de Sumas - Fácil</h2>
@@ -821,7 +821,7 @@ else{
                         <input type="hidden" name="sum2_operand2" value="<?php echo $sum2_operand2; ?>">
                         <input type="number" name="sum2_answer" required>
                     </div>
-                    <button type="submit" name="submit_sum2">Verificar Suma 2</button>
+                    <button class="btn-verificar" type="submit" name="submit_sum2">Verificar Suma 2</button>
                     <div class="message">
                         <p><?php echo $sum2_message; ?></p>
                     </div>
@@ -839,7 +839,7 @@ else{
             <?php if ($sum3_completed == 1): ?>
                 <h2>Ejercicio de Sumas - Fácil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                 <h2>Ejercicio de Sumas - Fácil</h2>
@@ -851,7 +851,7 @@ else{
                         <input type="hidden" name="sum3_operand2" value="<?php echo $sum3_operand2; ?>">
                         <input type="number" name="sum3_answer" required>
                     </div>
-                    <button type="submit" name="submit_sum3">Verificar Suma 3</button>
+                    <button class="btn-verificar"  type="submit" name="submit_sum3">Verificar Suma 3</button>
                     <div class="message">
                         <p><?php echo $sum3_message; ?></p>
                     </div>
@@ -863,7 +863,7 @@ else{
             <?php if ($sum4_completed == 1): ?>
                 <h2>Ejercicio de Sumas - Fácil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                 <h2>Ejercicio de Sumas - Fácil</h2>
@@ -875,7 +875,7 @@ else{
                         <input type="hidden" name="sum4_operand2" value="<?php echo $sum4_operand2; ?>">
                         <input type="number" name="sum4_answer" required>
                     </div>
-                    <button type="submit" name="submit_sum4">Verificar Suma 4</button>
+                    <button class="btn-verificar" type="submit" name="submit_sum4">Verificar Suma 4</button>
                     <div class="message">
                         <p><?php echo $sum4_message; ?></p>
                     </div>
@@ -901,7 +901,7 @@ else{
                 <?php if ($sub1_completed == 1): ?>
                 <h2>Ejercicio de Restas - Fácil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                     <h2>Ejercicio de Restas - Fácil</h2>
@@ -913,7 +913,7 @@ else{
                             <input type="hidden" name="sub1_operand2" value="<?php echo $sub1_operand2; ?>">
                             <input type="number" name="sub1_answer" required>
                         </div>
-                        <button type="submit" name="submit_sub1">Verificar Resta 1</button>
+                        <button class="btn-verificar" type="submit" name="submit_sub1">Verificar Resta 1</button>
                         <div class="message">
                             <p><?php echo $sub1_message; ?></p>
                         </div>
@@ -928,7 +928,7 @@ else{
                 <?php if ($sub2_completed == 1): ?>
                 <h2>Ejercicio de Restas - Fácil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                     <h2>Ejercicio de Restas - Fácil</h2>
@@ -940,7 +940,7 @@ else{
                             <input type="hidden" name="sub2_operand2" value="<?php echo $sub2_operand2; ?>">
                             <input type="number" name="sub2_answer" required>
                         </div>
-                        <button type="submit" name="submit_sub2">Verificar Resta 2</button>
+                        <button class="btn-verificar" type="submit" name="submit_sub2">Verificar Resta 2</button>
                         <div class="message">
                             <p><?php echo $sub2_message; ?></p>
                         </div>
@@ -958,7 +958,7 @@ else{
                 <?php if ($sub3_completed == 1): ?>
                 <h2>Ejercicio de Restas - Fácil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                     <h2>Ejercicio de Restas - Fácil</h2>
@@ -970,7 +970,7 @@ else{
                             <input type="hidden" name="sub3_operand2" value="<?php echo $sub3_operand2; ?>">
                             <input type="number" name="sub3_answer" required>
                         </div>
-                        <button type="submit" name="submit_sub3">Verificar Resta 3</button>
+                        <button class="btn-verificar" type="submit" name="submit_sub3">Verificar Resta 3</button>
                         <div class="message">
                             <p><?php echo $sub3_message; ?></p>
                         </div>
@@ -985,7 +985,7 @@ else{
                 <?php if ($sub4_completed == 1): ?>
                 <h2>Ejercicio de Restas - Fácil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                     <h2>Ejercicio de Restas - Fácil</h2>
@@ -997,7 +997,7 @@ else{
                             <input type="hidden" name="sub4_operand2" value="<?php echo $sub4_operand2; ?>">
                             <input type="number" name="sub4_answer" required>
                         </div>
-                        <button type="submit" name="submit_sub4">Verificar Resta 4</button>
+                        <button class="btn-verificar" type="submit" name="submit_sub4">Verificar Resta 4</button>
                         <div class="message">
                             <p><?php echo $sub4_message; ?></p>
                         </div>
@@ -1023,7 +1023,7 @@ else{
             <?php if ($sum5_completed == 1): ?>
                 <h2>Ejercicio de Sumas - Normal</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                 <h2>Ejercicio de Sumas - Normal</h2>
@@ -1035,7 +1035,7 @@ else{
                         <input type="hidden" name="sum5_operand2" value="<?php echo $sum5_operand2; ?>">
                         <input type="number" name="sum5_answer" required>
                     </div>
-                    <button type="submit" name="submit_sum5">Verificar Suma 5</button>
+                    <button class="btn-verificar" type="submit" name="submit_sum5">Verificar Suma 5</button>
                     <div class="message">
                         <p><?php echo $sum5_message; ?></p>
                     </div>
@@ -1047,7 +1047,7 @@ else{
             <?php if ($sum6_completed == 1): ?>
                 <h2>Ejercicio de Sumas - Normal</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                 <h2>Ejercicio de Sumas - Normal</h2>
@@ -1059,7 +1059,7 @@ else{
                         <input type="hidden" name="sum6_operand2" value="<?php echo $sum6_operand2; ?>">
                         <input type="number" name="sum6_answer" required>
                     </div>
-                    <button type="submit" name="submit_sum6">Verificar Suma 6</button>
+                    <button class="btn-verificar" type="submit" name="submit_sum6">Verificar Suma 6</button>
                     <div class="message">
                         <p><?php echo $sum6_message; ?></p>
                     </div>
@@ -1077,7 +1077,7 @@ else{
                 <?php if ($sub5_completed == 1): ?>
                 <h2>Ejercicio de Restas - Normal</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                     <h2>Ejercicio de Restas - Normal</h2>
@@ -1089,7 +1089,7 @@ else{
                             <input type="hidden" name="sub5_operand2" value="<?php echo $sub5_operand2; ?>">
                             <input type="number" name="sub5_answer" required>
                         </div>
-                        <button type="submit" name="submit_sub5">Verificar Resta 5</button>
+                        <button class="btn-verificar" type="submit" name="submit_sub5">Verificar Resta 5</button>
                         <div class="message">
                             <p><?php echo $sub5_message; ?></p>
                         </div>
@@ -1104,7 +1104,7 @@ else{
                 <?php if ($sub6_completed == 1): ?>
                 <h2>Ejercicio de Restas - Normal</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                     <h2>Ejercicio de Restas - Normal</h2>
@@ -1116,7 +1116,7 @@ else{
                             <input type="hidden" name="sub6_operand2" value="<?php echo $sub6_operand2; ?>">
                             <input type="number" name="sub6_answer" required>
                         </div>
-                        <button type="submit" name="submit_sub6">Verificar Resta 6</button>
+                        <button class="btn-verificar" type="submit" name="submit_sub6">Verificar Resta 6</button>
                         <div class="message">
                             <p><?php echo $sub6_message; ?></p>
                         </div>
@@ -1142,7 +1142,7 @@ else{
             <?php if ($sum7_completed == 1): ?>
                 <h2>Ejercicio de Sumas - Difícil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                 <h2>Ejercicio de Sumas - Difícil</h2>
@@ -1154,7 +1154,7 @@ else{
                         <input type="hidden" name="sum7_operand2" value="<?php echo $sum7_operand2; ?>">
                         <input type="number" name="sum7_answer" required>
                     </div>
-                    <button type="submit" name="submit_sum7">Verificar Suma 7</button>
+                    <button class="btn-verificar" type="submit" name="submit_sum7">Verificar Suma 7</button>
                     <div class="message">
                         <p><?php echo $sum7_message; ?></p>
                     </div>
@@ -1166,7 +1166,7 @@ else{
             <?php if ($sum8_completed == 1): ?>
                 <h2>Ejercicio de Sumas - Difícil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                 <h2>Ejercicio de Sumas - Difícil</h2>
@@ -1178,7 +1178,7 @@ else{
                         <input type="hidden" name="sum8_operand2" value="<?php echo $sum8_operand2; ?>">
                         <input type="number" name="sum8_answer" required>
                     </div>
-                    <button type="submit" name="submit_sum8">Verificar Suma 8</button>
+                    <button class="btn-verificar" type="submit" name="submit_sum8">Verificar Suma 8</button>
                     <div class="message">
                         <p><?php echo $sum8_message; ?></p>
                     </div>
@@ -1196,7 +1196,7 @@ else{
                 <?php if ($sub7_completed == 1): ?>
                 <h2>Ejercicio de Restas - Difícil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                     <h2>Ejercicio de Restas - Difícil</h2>
@@ -1208,7 +1208,7 @@ else{
                             <input type="hidden" name="sub7_operand2" value="<?php echo $sub7_operand2; ?>">
                             <input type="number" name="sub7_answer" required>
                         </div>
-                        <button type="submit" name="submit_sub7">Verificar Resta 7</button>
+                        <button class="btn-verificar" type="submit" name="submit_sub7">Verificar Resta 7</button>
                         <div class="message">
                             <p><?php echo $sub7_message; ?></p>
                         </div>
@@ -1223,7 +1223,7 @@ else{
                 <?php if ($sub8_completed == 1): ?>
                 <h2>Ejercicio de Restas - Difícil</h2>
                 <div class="message">
-                    <p>¡Ya has completado este ejercicio con éxito!</p>
+                    <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
             <?php else: ?>
                     <h2>Ejercicio de Restas - Difícil</h2>
@@ -1235,7 +1235,7 @@ else{
                             <input type="hidden" name="sub8_operand2" value="<?php echo $sub8_operand2; ?>">
                             <input type="number" name="sub8_answer" required>
                         </div>
-                        <button type="submit" name="submit_sub8">Verificar Resta 8</button>
+                        <button class="btn-verificar" type="submit" name="submit_sub8">Verificar Resta 8</button>
                         <div class="message">
                             <p><?php echo $sub8_message; ?></p>
                         </div>

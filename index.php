@@ -30,6 +30,8 @@ include("controller/login_user.php");
                 echo '<div class="alert alert-warning">Alguno de los campos está vacío</div>';
             } elseif (isset($_GET['not_found'])) {
                 echo '<div class="alert alert-danger">Error: Usuario no encontrado.</div>';
+            } elseif (isset($_GET['success'])) {
+                echo '<div class="alert alert-success">Registro exitoso. Inicia sesión.</div>';
             }
            ?>
            <div class="input-box">
