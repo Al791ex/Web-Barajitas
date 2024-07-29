@@ -792,7 +792,7 @@ else{
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum1_operand1; ?> + <?php echo $sum1_operand2; ?>?</p>
+                        <p>¿Cuánto es <?php echo $sum1_operand1; ?> + <?php echo $sum1_operand2; ?>? 🤔</p>
                         <input type="hidden" name="sum1_operand1" value="<?php echo $sum1_operand1; ?>">
                         <input type="hidden" name="sum1_operand2" value="<?php echo $sum1_operand2; ?>">
                         <input type="number" name="sum1_answer" required>
@@ -816,7 +816,7 @@ else{
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum2_operand1; ?> + <?php echo $sum2_operand2; ?>?</p>
+                        <p>¿Cuánto es <?php echo $sum2_operand1; ?> + <?php echo $sum2_operand2; ?>? 🤔</p>
                         <input type="hidden" name="sum2_operand1" value="<?php echo $sum2_operand1; ?>">
                         <input type="hidden" name="sum2_operand2" value="<?php echo $sum2_operand2; ?>">
                         <input type="number" name="sum2_answer" required>
@@ -846,7 +846,7 @@ else{
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum3_operand1; ?> + <?php echo $sum3_operand2; ?>?</p>
+                        <p>¿Cuánto es <?php echo $sum3_operand1; ?> + <?php echo $sum3_operand2; ?>? 🤔</p>
                         <input type="hidden" name="sum3_operand1" value="<?php echo $sum3_operand1; ?>">
                         <input type="hidden" name="sum3_operand2" value="<?php echo $sum3_operand2; ?>">
                         <input type="number" name="sum3_answer" required>
@@ -870,7 +870,7 @@ else{
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum4_operand1; ?> + <?php echo $sum4_operand2; ?>?</p>
+                        <p>¿Cuánto es <?php echo $sum4_operand1; ?> + <?php echo $sum4_operand2; ?>? 🤔</p>
                         <input type="hidden" name="sum4_operand1" value="<?php echo $sum4_operand1; ?>">
                         <input type="hidden" name="sum4_operand2" value="<?php echo $sum4_operand2; ?>">
                         <input type="number" name="sum4_answer" required>
@@ -908,7 +908,7 @@ else{
                     
                     <form method="post" action="">
                         <div class="problem">
-                            <p>¿Cuánto es <?php echo $sub1_operand1; ?> - <?php echo $sub1_operand2; ?>?</p>
+                            <p>¿Cuánto es <?php echo $sub1_operand1; ?> - <?php echo $sub1_operand2; ?>? 🤔</p>
                             <input type="hidden" name="sub1_operand1" value="<?php echo $sub1_operand1; ?>">
                             <input type="hidden" name="sub1_operand2" value="<?php echo $sub1_operand2; ?>">
                             <input type="number" name="sub1_answer" required>
@@ -935,7 +935,7 @@ else{
                     
                     <form method="post" action="">
                         <div class="problem">
-                            <p>¿Cuánto es <?php echo $sub2_operand1; ?> - <?php echo $sub2_operand2; ?>?</p>
+                            <p>¿Cuánto es <?php echo $sub2_operand1; ?> - <?php echo $sub2_operand2; ?>? 🤔</p>
                             <input type="hidden" name="sub2_operand1" value="<?php echo $sub2_operand1; ?>">
                             <input type="hidden" name="sub2_operand2" value="<?php echo $sub2_operand2; ?>">
                             <input type="number" name="sub2_answer" required>
@@ -965,7 +965,7 @@ else{
                     
                     <form method="post" action="">
                         <div class="problem">
-                            <p>¿Cuánto es <?php echo $sub3_operand1; ?> - <?php echo $sub3_operand2; ?>?</p>
+                            <p>¿Cuánto es <?php echo $sub3_operand1; ?> - <?php echo $sub3_operand2; ?>? 🤔</p>
                             <input type="hidden" name="sub3_operand1" value="<?php echo $sub3_operand1; ?>">
                             <input type="hidden" name="sub3_operand2" value="<?php echo $sub3_operand2; ?>">
                             <input type="number" name="sub3_answer" required>
@@ -992,7 +992,7 @@ else{
                     
                     <form method="post" action="">
                         <div class="problem">
-                            <p>¿Cuánto es <?php echo $sub4_operand1; ?> - <?php echo $sub4_operand2; ?>?</p>
+                            <p>¿Cuánto es <?php echo $sub4_operand1; ?> - <?php echo $sub4_operand2; ?>? 🤔</p>
                             <input type="hidden" name="sub4_operand1" value="<?php echo $sub4_operand1; ?>">
                             <input type="hidden" name="sub4_operand2" value="<?php echo $sub4_operand2; ?>">
                             <input type="number" name="sub4_answer" required>
@@ -1030,7 +1030,7 @@ else{
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum5_operand1; ?> + <?php echo $sum5_operand2; ?>?</p>
+                        <p>¿Cuánto es <?php echo $sum5_operand1; ?> + <?php echo $sum5_operand2; ?>? 🤔</p>
                         <input type="hidden" name="sum5_operand1" value="<?php echo $sum5_operand1; ?>">
                         <input type="hidden" name="sum5_operand2" value="<?php echo $sum5_operand2; ?>">
                         <input type="number" name="sum5_answer" required>
@@ -1054,7 +1054,7 @@ else{
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum6_operand1; ?> + <?php echo $sum6_operand2; ?>?</p>
+                        <p>¿Cuánto es <?php echo $sum6_operand1; ?> + <?php echo $sum6_operand2; ?>? 🤔</p>
                         <input type="hidden" name="sum6_operand1" value="<?php echo $sum6_operand1; ?>">
                         <input type="hidden" name="sum6_operand2" value="<?php echo $sum6_operand2; ?>">
                         <input type="number" name="sum6_answer" required>
@@ -1084,7 +1084,7 @@ else{
                     
                     <form method="post" action="">
                         <div class="problem">
-                            <p>¿Cuánto es <?php echo $sub5_operand1; ?> - <?php echo $sub5_operand2; ?>?</p>
+                            <p>¿Cuánto es <?php echo $sub5_operand1; ?> - <?php echo $sub5_operand2; ?>? 🤔</p>
                             <input type="hidden" name="sub5_operand1" value="<?php echo $sub5_operand1; ?>">
                             <input type="hidden" name="sub5_operand2" value="<?php echo $sub5_operand2; ?>">
                             <input type="number" name="sub5_answer" required>
@@ -1111,7 +1111,7 @@ else{
                     
                     <form method="post" action="">
                         <div class="problem">
-                            <p>¿Cuánto es <?php echo $sub6_operand1; ?> - <?php echo $sub6_operand2; ?>?</p>
+                            <p>¿Cuánto es <?php echo $sub6_operand1; ?> - <?php echo $sub6_operand2; ?>? 🤔</p>
                             <input type="hidden" name="sub6_operand1" value="<?php echo $sub6_operand1; ?>">
                             <input type="hidden" name="sub6_operand2" value="<?php echo $sub6_operand2; ?>">
                             <input type="number" name="sub6_answer" required>
@@ -1149,7 +1149,7 @@ else{
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum7_operand1; ?> + <?php echo $sum7_operand2; ?>?</p>
+                        <p>¿Cuánto es <?php echo $sum7_operand1; ?> + <?php echo $sum7_operand2; ?>? 🤔</p>
                         <input type="hidden" name="sum7_operand1" value="<?php echo $sum7_operand1; ?>">
                         <input type="hidden" name="sum7_operand2" value="<?php echo $sum7_operand2; ?>">
                         <input type="number" name="sum7_answer" required>
@@ -1173,7 +1173,7 @@ else{
                 
                 <form method="post" action="">
                     <div class="problem">
-                        <p>¿Cuánto es <?php echo $sum8_operand1; ?> + <?php echo $sum8_operand2; ?>?</p>
+                        <p>¿Cuánto es <?php echo $sum8_operand1; ?> + <?php echo $sum8_operand2; ?>? 🤔</p>
                         <input type="hidden" name="sum8_operand1" value="<?php echo $sum8_operand1; ?>">
                         <input type="hidden" name="sum8_operand2" value="<?php echo $sum8_operand2; ?>">
                         <input type="number" name="sum8_answer" required>
@@ -1198,12 +1198,12 @@ else{
                 <div class="message">
                     <p>¡Ya has completado este ejercicio con éxito! 😁</p>
                 </div>
-            <?php else: ?>
-                    <h2>Ejercicio de Restas - Difícil</h2>
+                <?php else: ?>
+                <h2>Ejercicio de Restas - Difícil</h2>
                     
                     <form method="post" action="">
                         <div class="problem">
-                            <p>¿Cuánto es <?php echo $sub7_operand1; ?> - <?php echo $sub7_operand2; ?>?</p>
+                            <p>¿Cuánto es <?php echo $sub7_operand1; ?> - <?php echo $sub7_operand2; ?>? 🤔</p>
                             <input type="hidden" name="sub7_operand1" value="<?php echo $sub7_operand1; ?>">
                             <input type="hidden" name="sub7_operand2" value="<?php echo $sub7_operand2; ?>">
                             <input type="number" name="sub7_answer" required>
@@ -1230,7 +1230,7 @@ else{
                     
                     <form method="post" action="">
                         <div class="problem">
-                            <p>¿Cuánto es <?php echo $sub8_operand1; ?> - <?php echo $sub8_operand2; ?>?</p>
+                            <p>¿Cuánto es <?php echo $sub8_operand1; ?> - <?php echo $sub8_operand2; ?>? 🤔</p>
                             <input type="hidden" name="sub8_operand1" value="<?php echo $sub8_operand1; ?>">
                             <input type="hidden" name="sub8_operand2" value="<?php echo $sub8_operand2; ?>">
                             <input type="number" name="sub8_answer" required>
@@ -1264,18 +1264,16 @@ else{
             <div class="col-auto left">
                 <form method="post" action="">
                     <input type="hidden" name="flecha" value="<?php echo $pagFlecha; ?>">
-                    <button type="submit" name="decrease" class="btn btn-success"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    <button type="submit" name="decrease" class="btn-verificar"><i class="fa-solid fa-arrow-left-long"></i></button>
                 </form>
             </div>
             <div class="col-auto ml-auto right">
                 <form method="post" action="">
                     <input type="hidden" name="flecha" value="<?php echo $pagFlecha; ?>">
-                    <button type="submit" name="increase" class="btn btn-success"><i class="fa-solid fa-arrow-right-long"></i></button>
+                    <button type="submit" name="increase" class="btn-verificar"><i class="fa-solid fa-arrow-right-long"></i></button>
                 </form>
             </div>
         </div>
     </div>
-
-
 </body>
 </html>

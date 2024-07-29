@@ -32,7 +32,7 @@ if (isset($_POST['register'])) {
                 }
             } catch (mysqli_sql_exception $e) {
                 if ($e->getCode() == 1062) { // Código de error para clave duplicada
-                    $error_message = 'Error: Usuario ya registrado.';
+                    $error_message = 'Usuario ya registrado.';
                 } else {
                     $error_message = 'Error al registrar el usuario: ' . $e->getMessage();
                 }
