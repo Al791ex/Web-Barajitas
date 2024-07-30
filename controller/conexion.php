@@ -1,7 +1,7 @@
 <?php
 
-    $db_host = "grupo3.devcorezulia.lat";
-    $db_user = "gp3_Al791ex08";
+    $db_host = "localhost";
+    $db_user = "gp3_root";
     $db_pass = 'v4$L0Yk2l4';
     $db_name = 'gp3_sumas_db';
 
